@@ -1,6 +1,5 @@
 # DeathByCaptcha-ObjC
 
-[![CI Status](http://img.shields.io/travis/Majd Alfhaily/DeathByCaptcha-ObjC.svg?style=flat)](https://travis-ci.org/Majd Alfhaily/DeathByCaptcha-ObjC)
 [![Version](https://img.shields.io/cocoapods/v/DeathByCaptcha-ObjC.svg?style=flat)](http://cocoapods.org/pods/DeathByCaptcha-ObjC)
 [![License](https://img.shields.io/cocoapods/l/DeathByCaptcha-ObjC.svg?style=flat)](http://cocoapods.org/pods/DeathByCaptcha-ObjC)
 [![Platform](https://img.shields.io/cocoapods/p/DeathByCaptcha-ObjC.svg?style=flat)](http://cocoapods.org/pods/DeathByCaptcha-ObjC)
