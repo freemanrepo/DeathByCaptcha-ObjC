@@ -7,36 +7,25 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'DeathByCaptcha-ObjC'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DeathByCaptcha-ObjC.'
+  s.name                  = 'DeathByCaptcha-ObjC'
+  s.version               = '1.0.0'
+  s.summary               = 'An API wrapper for DeathByCaptcha written in obj-c.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  s.description           = <<-DESC
+This is an API wrapper built in Objective-C specifically for DeathByCaptcha. It requires a DeathByCaptcha account and enough balance to solve captchas. More info available on deathbycaptcha.com.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/DeathByCaptcha-ObjC'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Majd Alfhaily' => 'majd@alfhaily.me' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/DeathByCaptcha-ObjC.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage              = 'https://github.com/freemanrepo/DeathByCaptcha-ObjC'
+  s.license               = { :type => 'MIT', :file => 'LICENSE' }
+  s.author                = { 'Majd Alfhaily' => 'majd@alfhaily.me' }
+  s.source                = { :git => 'https://github.com/freemanrepo/DeathByCaptcha-ObjC.git', :tag => s.version.to_s }
+  s.social_media_url      = 'https://twitter.com/freemanrepo'
 
-  s.ios.deployment_target = '8.0'
+  s.source_files          = 'DeathByCaptcha-ObjC.{h,m}'
+  s.requires_arc          = true
 
-  s.source_files = 'DeathByCaptcha-ObjC/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DeathByCaptcha-ObjC' => ['DeathByCaptcha-ObjC/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.7'
+  s.frameworks       = 'Foundation'
+  s.dependency 'STHTTPRequest'
 end

@@ -5,12 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/DeathByCaptcha-ObjC.svg?style=flat)](http://cocoapods.org/pods/DeathByCaptcha-ObjC)
 [![Platform](https://img.shields.io/cocoapods/p/DeathByCaptcha-ObjC.svg?style=flat)](http://cocoapods.org/pods/DeathByCaptcha-ObjC)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
 
 DeathByCaptcha-ObjC is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,9 +14,22 @@ it, simply add the following line to your Podfile:
 pod "DeathByCaptcha-ObjC"
 ```
 
+## Usage
+
+```objective-c
+DeathByCaptcha *sharedInstance = [DeathByCaptcha sharedInstance];
+sharedInstance.username = @"dbc_username";
+sharedInstance.password = @"dbc_password";
+
+NSDictionary *solvedCaptcha = [DeathByCaptcha solveCaptchaFromFileAtPath@"/path/to/captcha_image" checkInterval:5];
+NSLog(@"%@", solvedCaptcha[@"text"]);
+```
+
+
+
 ## Author
 
-Majd Alfhaily, majd@alfhaily.me
+Majd Alfhaily, majd@alfhaily.me, [@freemanrepo](https://twitter.com/freemanrepo) on Twitter.
 
 ## License
 
