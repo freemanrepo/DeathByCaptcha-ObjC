@@ -29,7 +29,7 @@ NSLog(@"%@", solvedCaptcha[@"text"]);
 
 ## Author
 
-Majd Alfhaily, majd@alfhaily.me, [@freemanrepo](https://twitter.com/freemanrepo) on Twitter.
+Majd Alfhaily, [@freemanrepo](https://twitter.com/freemanrepo) on Twitter.
 
 ## License
 
